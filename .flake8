@@ -1,0 +1,6 @@
+[flake8]
+ignore=
+    # 'app_name.example_sub_blueprint.routes' imported but unused -- CUZ OF BLUEPRINTS (FLASK)
+    F401,
+    # module level import not at top of file -- CUZ OF BLUEPRINTS (FLASK)
+    E402
