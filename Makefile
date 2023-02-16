@@ -22,5 +22,5 @@ test:  # Тесты
 debug: $(name)
 	flask --app $(name) --debug run
 
-deploy: $(name) lint
+prod: $(name) lint
 	waitress-serve --port=8080 --call $(name):create_app
