@@ -1,7 +1,7 @@
 name := app_name
 
 deps:  # Установка зависимостей
-	pip install flake8 flask-sqlalchemy flask-wtf flask waitress
+	pip install flake8 flask-sqlalchemy flask-wtf flask waitress flask-bcrypt
 
 lint:  $(name) # Проверка на pep8
 	flake8 $(name)
